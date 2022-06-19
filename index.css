@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    width: 100%;
+  }
+  
+  .first {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(image/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+    justify-content: center;
+  }
+
+  
+  .top .writing{
+    width: 40%;
+  }
+
+  .top .image{
+    width: 40%;
+  }
+
