@@ -6,91 +6,75 @@
  @font-face{
   font-family: open sans;
   src: url(https//fonts.google.com/specimen/open+sans);
+
  }
 
-
-*{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
   body{
-    font-size: 18px;
     font-family: Poppins;
     font-weight: 700;
   }
   
-  .container{
-    display: grid;
-     height: 100vh;
-    grid-template-areas:
-      "top"
-      "grow"
-      "flow"
-      "user"
-      "btn"
-      "footer";
-    grid-template-columns: auto;
-    grid-template-rows:  43em 35em 35em 35em 10em 30em;
-  }
-   
-  
-  
-  
-  #top{
+  .top{
     background-color: hsl(193, 100%, 96%);
-      grid-area: top;
       background-image: url(image/bg-hero-desktop.svg);
-      display: flex;
-      flex-direction: column;
-      padding: 2em;
-      width: auto;
 
-  
+  } 
+
+  .nav, .sth{
+    width: 90%;
+    margin: 0 auto;
+
   }
 
   .nav{
-    width: 100%;
-    display: block;
+    padding: 2em 0;
   }
-  
+
   .nav button{
     float: right;
   }
 
   .nav img{
     width: 9em;
-    height: 5vh;
+
   }
 
-.topwriting{
+.sth {
     display: flex;
     flex-direction: row;
-    margin: 4em 0em;
-    float: left;
+    margin: 4em auto;
 
 }
-  .topwriting #writing{
-    width: 35%;
-    margin: 5em 2em 5em 0em;
-    position: relative;
-    top: 0em;
+  .sth #writing{
+    margin: 6em 3em 6em 0;
+    width: 100%;
+  }
+
+  #writing button{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    width: 25vw;
+    font-size: 1.1rem;
   }
 
 h1{
   font-family: poppins;
   font-weight: 600;
-    font-size: 30px;
     width: 70%;
     margin-bottom: 1em;
     text-transform: capitalize;
-    font-size: 31px;
+    font-size: 2.5rem;
 }
   p{
    font-weight: 400;
-    margin-bottom: 1em;
-    font-size: 19px;
+   margin-bottom: 1em;
+   font-size: 1.3rem;
   }
 
   button{
@@ -104,9 +88,8 @@ h1{
     width: 16em;
     background-color: hsl(322, 100%, 66%);
     color: white;
-    height: 5vh;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 0.9em;
     margin: 1em auto;
   }
@@ -119,175 +102,107 @@ h1{
 
 
   #picture img {
-    width: 46em;
-    height: 75vh;
-    position: relative;
-    left: 3em;
-}
-#grow .boss {
-  background-color: white;
-  grid-area: grow;
-  padding: 2em;
-  display: flex;
-  flex-direction: row;
-  float: left;
-  border: 0.3em solid whitesmoke;
-  height: 50vh;
-  position: relative;
-  top: 30px;
-  left: 17px;
-  width: 97%;
-  margin: 1em auto;
-}
-
-#grow img {
-  width: 32em;
-  height: 41vh;
-  position: relative;
-  left: 9em;
-}
-  #grow #writing{
-
-    width: 40%;
-    margin: 10em 2em 5em 0em;
-
+    padding: 2em 0 2em 4em;
+    width: 43em;
   }
 
-
-  
-  #flow .boss {
-    background-color: white;
-    grid-area: flow;
-    padding: 2em;
-    display: flex;
-    flex-direction: row-reverse;
-    float: left;
-    border: 0.3em solid whitesmoke;
-    height: 50vh;
-    position: relative;
-    top: -9em;
-    width: 97%;
-    margin: 1em auto;
-    left: 16px;
-}
-
-  #flow img {
-    width: 29em;
-    height: 43vh;
-    position: relative;
-    left: -15em;
-}
-
-  #flow #writing{
-
-    width: 40%;
-    margin: 11em 0em 5em 0em;
-  }
-
-  
-  #user .boss {
-    background-color: white;
-    grid-area: user;
-    padding: 2em;
+ .boss {
     display: flex;
     flex-direction: row;
-    float: left;
-    border: 0.3em solid whitesmoke;
-    height: 50vh;
-    position: relative;
-    bottom: 19em;
-    left: 17px;
-    width: 97%;
-    margin: 1em auto;
+    border-radius: 1em;
+    box-shadow: 0 0 25px 10px whitesmoke;
+    width: 90%;
+    padding: 2em auto;
+    margin: 7em auto;
 }
 
-  #user img{
-    width: 30em;
-    height: 42vh;
-    position: relative;
-    left: 15em;
-  }
+.boss #writing {
+  padding: 9em 4em;
+}
 
-  #user #writing{
+.flow{
+  flex-direction: row-reverse;
+}
 
-    width: 40%;
-    margin: 8em 0em 5em 0em;
-  }
+.flow #picture img {
+  width: 42em;
+  padding: 2em 4em;
+}
 
-  #btn{
-      z-index: 1;
-  }
+.user #picture img{
+  width: 35em
+
+}
+
+
+
+
+
+
   
 
 
-  #btn .boss {
-    background-color: white;
-    grid-area: btn;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    border: 0.3em solid whitesmoke;
-    height: 21vh;
-    text-align: center;
-    width: 35%;
-    margin: 5em  auto 0em auto;
-    position: relative;
-    bottom: 30em;
+ 
+  
+
+
+#btn .boss {
+  background-color: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border: 0.3em solid whitesmoke;
+  width: 40em;
+  margin: 5em  auto 0em auto;
+  align-items: center;
 }
+   
 
 #btn p {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 2rem;
 }
 #btn button {
-  width: 22em;
+  width: 18em;
   background-color: hsl(322, 100%, 66%);
   color: white;
   font-weight: 600;
-  position: relative;
-  left: 63px;
-  height: 7vh;
   padding: 1em;
+  font-size: 1.2rem;
 }
   
-#footer {
+.footer {
   background-color: hsl(192, 100%, 9%);
-  grid-area: footer;
   display: flex;
   color: white;
+  padding: 10em 0;
   position: relative;
-  bottom: 29em;
-  overflow: hidden;
+  bottom: 7em;
+  z-index: -1;
+
 }
 
-  #footer section{
-    width: 33.33%; 
-  margin: 10em 7em 3em 5em;
-  float: left;
-  
+.footer div{
+  width: 20%;
+  margin: 4em auto;
+  text-align: center;
+}
+
+  .footer img{
+    display: inline-block;
+
+  }
+
+  .footer #first{
+    text-align: justify;
   }
 
  
   
 
-  .first img {
-    margin: 1em;
-    float: left;
-    position: relative;
-    right: 3em;
-}
-
-  .first span{
-    float: right;
-    position: relative;
-    bottom: 40px;
-    left: 65px;
-
-  }
 
 
-
-  #footer a{
+  .footer a{
     text-decoration: none;
     display: block;
     margin-bottom: 1em;
@@ -296,17 +211,13 @@ h1{
   }
 
   .sm img{
-    width: 5em;
-    height: 5vh;
-    position: relative;
-    right: 2em;
+    width: 4em;
+    display: block;
+    
   }
 
   #first p {
-    /* width: 11em; */
-    position: relative;
-    right: 0em;
-    /* text-align: justify; */
+    
     word-break: break-all;
     overflow: hidden;
   }
