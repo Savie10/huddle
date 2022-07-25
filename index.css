@@ -9,6 +9,12 @@
 
  }
 
+ @keyframes example {
+   from {width: 90%;}
+   to {width: 95%;}
+  
+ }
+
   *{
     margin: 0;
     padding: 0;
@@ -61,6 +67,12 @@
     color: white;
     width: 25vw;
     font-size: 1.1rem;
+    box-shadow: 0 0 10px -2px black;
+
+  }
+
+  #writing button:hover{
+    width:  26vw;
   }
 
 h1{
@@ -71,35 +83,32 @@ h1{
     text-transform: capitalize;
     font-size: 2.5rem;
 }
-  p{
+
+p{
    font-weight: 400;
    margin-bottom: 1em;
    font-size: 1.3rem;
-  }
+}
 
-  button{
+button{
     border-radius: 2em;
     padding: 1em;
     border: none;
    
-  }
+}
 
-  .topwriting button{
-    width: 16em;
-    background-color: hsl(322, 100%, 66%);
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 0.9em;
-    margin: 1em auto;
-  }
+  
 
-  .nav button{
+.nav button{
     background-color: white;
     width: 18em;
     font-weight: 600;
-  }
+}
 
+
+.nav button:hover {
+    width: 19em;
+}
 
   #picture img {
     padding: 2em 0 2em 4em;
@@ -114,6 +123,12 @@ h1{
     width: 90%;
     padding: 2em auto;
     margin: 7em auto;
+}
+
+.boss:hover{
+  width: 93%;
+/* animation-name: example;
+animation-iteration-count: infinite; */
 }
 
 .boss #writing {
@@ -134,18 +149,7 @@ h1{
 
 }
 
-
-
-
-
-
-  
-
-
  
-  
-
-
 #btn .boss {
   background-color: white;
   padding: 2em;
@@ -155,22 +159,30 @@ h1{
   width: 40em;
   margin: 5em  auto 0em auto;
   align-items: center;
+  box-shadow:  0 0 8px 3px whitesmoke;
+
+}
+
+#btn .boss:hover{
+  width: 42em;
 }
    
 
 #btn p {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 #btn button {
   width: 18em;
   background-color: hsl(322, 100%, 66%);
   color: white;
   font-weight: 600;
-  padding: 1em;
+  padding: 0.4em;
   font-size: 1.2rem;
+  box-shadow: 0 0 8px 2px darkgray;
 }
-  
+
+
 .footer {
   background-color: hsl(192, 100%, 9%);
   display: flex;
@@ -226,255 +238,5 @@ h1{
   
   @media (max-width: 375px){
 
-    body {
-      font-size: 46px;
-  }
-    .container{
-      
-        grid-template-rows:  58em 75em 75em 75em 1em 75em;
-
-  
-    }
-
-    #top{
-      background-color: hsl(193, 100%, 96%);
-        background-image: url(image/bg-hero-mobile.svg);
-  
-    
-    }
-
-    .topwriting{
-     
-      flex-direction: column;
-      margin: 0em ;
    
-    }
-  
-  .topwriting #writing{
-    width:50%;
-    text-align: center;
-    
-  }
-  
-  h1 {
-    font-size: 7rem;
-    text-align: center;
-    position: relative;
-    left: 0;
-    width: 11em;
-}
-
-p {
-  width: 16em;
-  font-size: 5rem;
-  margin-left: 0em;
-}
-  .nav {
-    width: 88%;
-}
-
-#picture img {
-  
-    width: 30.5em;
-    height: 125vh;
-  position: relative;
-  left: -1em;
-  top: -2em;
-}
-  
-
-.topwriting button {
-  width: 27em;
-  font-size: 3rem;
-  padding: 0em;
-  float: left;
-  margin-top: 1em;
-  height: 25vh;
-}
-
-
-nav img {
-  width: 10em;
-  height: 4vh;
-}
-
-
-#grow .boss {
-  flex-direction: column-reverse;
-  height: 263vh;
-  width: 85%;
-  margin: 0em auto;
-  position: relative;
-  top: 2em;
-  left: 52px;
-}
-
-
-#grow img {
-  width: 24em;
-  height: 104vh;
-  left: 2em;
-  top: 11em;
-}
-
-#flow .boss {
-  
-  flex-direction: column-reverse;
-  height: 263vh;
-  position: relative;
-  width: 85%;
-  left: 1em;
-  top: -32em;
-}
-
-#flow img {
-  width: 22em;
-  height: 104vh;
-  position: relative;
-  left:  2em;
-  top: 3em;
-}
-
-#flow #writing {
-  width: 40%;
-  margin: 8em 0em 1em 0em;
-  position: relative;
-  top: 2em;
-}
-
-.nav button {
-  background-color: white;
-  width: 7em;
-  font-weight: 600;
-  padding: 0.8em;
-  font-size: 3rem;
-  position: relative;
-  top: -0.7em;
-}
-
-.nav img {
-  width: 9em;
-  height: 8vh;
-}
-
-#grow #writing {
-  position: relative;
-  top: 6em;
-  right: 0.5em;
-}
-
-#user .boss {
-  flex-direction: column-reverse;
-  height: 264vh;
-  bottom: 65em;
-  width: 85%;
-  position: relative;
-  left: 1em;
-}
-
-#user img {
-  width: 23em;
-  height: 100vh;
-  position: relative;
-  left: 2em;
-  top: 7em;
-}
-#user #writing {
-  margin: 10em 0em 2em 0em;
-  position: relative;
-  top: 1em;
-  right: 0.5em;
-}
-#btn .boss {
-  flex-direction: column;
-  height: 73vh;
-  width: 85%;
-  margin: 1em;
-  position: relative;
-  bottom: 88em;
-  right: 0.3em;
-}
-
-#btn p {
-  font-weight: 600;
-  font-size: 5.2rem;
-  position: relative;
-  right: 5rem;
-}
-
-#footer {
-  display: inline-block;
-  position: relative;
-  bottom: 81em;
-  right: 2em;
-  /* font-size: 4rem; */
-}
-
-.first{
-  float: left;
-  width: 50%;
-}
-#footer section{
-margin: 9em 7em 3em 5em;
-width: auto;
-
-}
-
-
-
-#footer a{
-  text-decoration: none;
-  display: block;
-  margin-bottom: 1em;
-  color: white;
-  font-size: 5rem;
-  
-}
-
-#btn button {
-  width: 23em;
-  color: white;
-  font-size: 3rem;
-  padding: 2em;
-  float: left;
-  margin-top: -1em;
-}
-
-footer div{
-  display: block;
-} 
-
-.first img {
-  margin: 1em;
-  float: left;
-  width: 2em;
-  height: 7vh;
-}
-
-#first p {
-  width: 11em;
-  position: relative;
-  right: 0em;
-  text-align: justify;
-  word-break: break-all;
-  overflow: hidden;
-}
-
-.second{
-  position: relative;
-  top: -8em;
-}
-
-.third{
-  position: relative;
-  top: -19em;
-}
-
-.sm img {
-  width: 4em;
-  height: 18vh;
-  position: relative;
-  bottom: 27em;
-  right: -7em;
-}
 }
